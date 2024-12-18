@@ -1,0 +1,13 @@
+src/
+.vs/
+.vscode/
+.idea/
+.fake/
+.ionide/
+.config/
+.gitignore/
+*.sln
+*.user
+*.tgz
+build/
+node_modules/

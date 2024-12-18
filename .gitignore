@@ -1,0 +1,10 @@
+node_modules
+*.log
+build/
+dist/
+bin/
+obj/
+.fake
+.ionide
+.idea
+*.vsix

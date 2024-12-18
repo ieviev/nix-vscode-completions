@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <NoWarn>3390</NoWarn>
+    <DefineConstants>FABLE_COMPILER;FABLE_COMPILER_JS</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../node_modules/ionide-vscode-helpers/src/Fable.Import.VSCode.fs" />
+    <Compile Include="Common.fs" />
+    <Compile Include="Main.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fable.Core" Version="4.0.0" />
+    <PackageReference Include="Fable.JsonProvider" Version="1.1.1" />
+    <PackageReference Include="Fable.Node" Version="1.2.0" />
+    <PackageReference Include="Fable.Promise" Version="3.2.0" />
+    <PackageReference Include="Thoth.Json" Version="10.2.0" />
+  </ItemGroup>
+</Project>

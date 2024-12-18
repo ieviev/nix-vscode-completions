@@ -1,0 +1,68 @@
+{
+    "name": "nix-vscode-completions",
+    "displayName": "nix-vscode-completions",
+    "description": "",
+    "version": "0.0.3",
+    "publisher": "ieviev",
+    "icon": "",
+    "private": true,
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ieviev/nix-vscode-completions"
+    },
+    "bugs": {
+        "url": "https://github.com/ieviev/nix-vscode-completions"
+    },
+    "engines": {
+        "vscode": "^1.82.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onLanguage:nix"
+    ],
+    "main": "./dist/main.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "nix-vscode-completions.queryNixOSOption",
+                "title": "nix-vscode-completions: query nixos option"
+            },
+            {
+                "command": "nix-vscode-completions.queryHomeManagerOption",
+                "title": "nix-vscode-completions: query home manager option"
+            },
+            {
+                "command": "nix-vscode-completions.queryNixPackage",
+                "title": "nix-vscode-completions: query nix package"
+            }
+        ]
+    },
+    "scripts": {
+        "install": "dotnet tool restore",
+        "build": "dotnet fable src -o build --run npm run esbuild",
+        "start:dev": "dotnet fable watch src -s -o build --runWatch npm run esbuild",
+        "start:dev-nocache": "dotnet fable watch src --noCache -s -o build --runWatch npm run esbuild ",
+        "esbuild": "esbuild ./build/Main.js --bundle --outfile=dist/main.js --external:vscode --format=cjs --platform=node --sourcemap",
+        "prepack": "npm run build",
+        "patch": "vsce package patch --baseContentUrl https://github.com/ieviev/nix-vscode-completions --baseImagesUrl https://github.com/ieviev/nix-vscode-completions",
+        "install-extension": "bash -c \"code --install-extension $(ls *.vsix | tail -n 1)\""
+    },
+    "dependencies": {
+        "ionide-vscode-helpers": "github:ionide/ionide-vscode-helpers"
+    },
+    "extensionDependencies": [],
+    "devDependencies": {
+        "@types/glob": "^8.0.0",
+        "@types/node": "^18.x",
+        "@types/vscode": "^1.82.0",
+        "@vscode/test-electron": "^2.2.0",
+        "@vscode/vsce": "^3.2.1",
+        "esbuild": "^0.13.15",
+        "eslint": "^8.28.0",
+        "glob": "^8.0.3",
+        "typescript": "^4.9.3"
+    }
+}
