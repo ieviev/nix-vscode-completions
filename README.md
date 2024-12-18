@@ -7,4 +7,7 @@ provided commands for vscode:
 
 #### setup
 
-right-click the `.vsix` extension file from inside vscode and select `Install Extension VSIX`
+- either install from the [vscode marketplace](https://marketplace.visualstudio.com/items?itemName=ieviev.nix-vscode-completions)
+- or download the `.vsix` extension file from [releases](https://github.com/ieviev/nix-vscode-completions/releases)
+  - and install the extension locally by right-clicking the `.vsix` extension file from inside vscode and selecting `Install Extension VSIX`
+
