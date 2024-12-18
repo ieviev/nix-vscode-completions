@@ -5,7 +5,7 @@ provided commands for vscode:
 - `nix-vscode-completions.queryHomeManagerOption`
 - `nix-vscode-completions.queryNixPackage`
 
-![](img/recording-s.mp4)
+![](./img/recording-s.mp4.mov)
 
 #### setup
 
