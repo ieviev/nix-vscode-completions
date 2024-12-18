@@ -5,7 +5,8 @@ provided commands for vscode:
 - `nix-vscode-completions.queryHomeManagerOption`
 - `nix-vscode-completions.queryNixPackage`
 
-https://github.com/ieviev/nix-vscode-completions/raw/refs/heads/main/img/recording-s.mp4
+https://github.com/user-attachments/assets/100a531f-bac7-4a11-ac66-e57ceca8071c
+
 
 #### setup
 
