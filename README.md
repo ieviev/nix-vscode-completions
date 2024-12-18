@@ -5,6 +5,8 @@ provided commands for vscode:
 - `nix-vscode-completions.queryHomeManagerOption`
 - `nix-vscode-completions.queryNixPackage`
 
+![](img/recording-s.mp4)
+
 #### setup
 
 - either install from the [vscode marketplace](https://marketplace.visualstudio.com/items?itemName=ieviev.nix-vscode-completions)
